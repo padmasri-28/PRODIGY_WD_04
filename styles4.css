@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Navbar */
+header {
+  background: #333;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff6f61;
+}
+
+/* Home Section */
+.home-section {
+  background: url('background.jpg') no-repeat center center/cover;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-content h2 {
+  font-size: 3rem;
+}
+
+.home-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #ff6f61;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.home-content button:hover {
+  background: #e55a4e;
+}
+
+/* About Section */
+.about-section {
+  background: #f4f4f4;
+  padding: 50px 20px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* Skills Section */
+.skills-section {
+  background: #fff;
+  padding: 50px 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.skill {
+  padding: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Contact Section */
+.contact-section {
+  background: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #45a049;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: white;
+}
